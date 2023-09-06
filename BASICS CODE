@@ -21,7 +21,7 @@ piar<int , int> p1 = {1,2] ;  pair<int , int> p2 = {4 , 5} ;
 cout<<p1.first <<p1.second;
 p1.swap(p2) ;
 
-//vector - it a contener for dinamic array which has an ability to resize itself .
+//vector - it a contener for dinamic array which has an ability to resize itself after insertiona nd deletion and it is contigious memory allocation.
 vector<int > v ;
 v.push_back(1) ;
 vector<pair<int , int> v2;  v2.push_back({3 , 4}) ;
@@ -42,3 +42,61 @@ vector<int> copy(2 , 60) ;
 v.insert(v.begin , copy.begin() , copy.end()) ;  //60 , 60 , 40 , 300 , 50
 v.size() ; 
 v2.swap(v) ;
+
+//LIST - it is similar to vector , it can give front operation ,but here their is non - ocntigous memory allocation
+//stact (lifo)- every operation happening in O(1) TC. st.top()
+//queue - q.front() , q.pop() , q.push() 
+
+//priority queue -  the highest element got on top , inside pq tree in maintained 
+priority_queue<int> pq ;
+pq.push(3) ; pq.push(4) ; cout<<pq.top() ;   //top = 4 (highest element)
+
+*minimum heap
+priority_queue<int , vector<int> , greater<int>> pq ; 
+pq.push(2) ; pq.push(3) ; cout<<pq.top() ; //top = 2 minimun element on the top
+
+*tc - push , pop take O(logn) and top take O(1)
+
+//SETS - it store everything in the sorted as well as unique element , not linear tree is maintined here.
+set<int> st ;
+st.insert(1) ; st.insert(5) ; st.insert(2) , st,insert(3) ;  
+for(auto i : st){
+cout<< i ; }
+ 
+    std::set<char> a;
+    a.insert('G');
+    a.insert('F');
+    a.insert('G');
+    for (auto& str : a) {
+        std::cout << str << ' ';
+    }    //F G
+
+// iterator pointing to
+    // position where 3 is
+    auto pos = s1.find(3);
+ 
+    // prints the set elements
+    cout << "The set elements after 3 are: ";
+    for (auto it = pos; it != s.end(); it++)
+        cout << *it << " "; }
+s1.erase(5) ;
+
+auto x = s1.find(2) ;
+auto y = s1.find(4) ;
+s1.erase(x , y)  //4 , 5
+
+set<int> b.swap(s1) ;
+
+//every thing in O(n) ;
+
+//UNORDER_SET - not in the sortted order , TC is o(1)
+unordered_set<int> st ;
+
+
+
+
+
+
+
+
+
