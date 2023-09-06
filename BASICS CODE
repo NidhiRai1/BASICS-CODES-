@@ -1,0 +1,15 @@
+include<bits/stdc++.h>   // for incliding of all the libraries
+string s1 , s2 ; cin >> s1 >> s2 ;  cout<<s1 << " " << s2 ;  //" " print till their is no any gap in the string 
+string str ; getline(cin , str) ; cout <<str ;  //it will print the entire line after the gaps also till the line break won't be their
+char ch = 'n' ; cout<, ch ;
+
+//array - similar type of datatype got stored and they are at contigeous memory location
+int arr[n] = {0};
+//function - it use to increase the readability
+void function not retun it cout
+pass by value - make the copy of original function and make the modificarion their but not change the original value in main function so answer remain the same as original
+pass by reference (&)- pass the address of orginal so change happens on the original
+*array alway  goes by reference else in vector , losr etc you have to apply & sign fro reference
+
+//time complexity - rate at which the time taken increases with respect to the input taken , TC IN WORST CASE 
+//SPACE COMPLEXITY - MEMORY SPACE = AUXALLARY SPACE (SPACE THAT YOU TAKE TO SOLE THE PROBLEM)  + INPUT SPACE (SPACE TO STORE THE INPUT)
