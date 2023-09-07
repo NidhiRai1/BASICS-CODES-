@@ -92,10 +92,37 @@ set<int> b.swap(s1) ;
 //UNORDER_SET - not in the sortted order , TC is o(1)
 unordered_set<int> st ;
 
+//MAP  - arrange in the sortted order of key with unique numbers and it's specific value (key , value )
+it worked in logerithumic of time
 
+map<int , int> mp ;  mp[1] = 2 ; mp.insert({3 , 4}) ;
+map<int , pair<int , int>> mmp ;
+map<pair<int , int> , int> mpp ; mpp({5,6}) = 70 ;
+for(auto it: mp){
+cout<< it.first <<" " << mp.second ;}
+cout<<mp[3] ;
+auto it = mp.find(3) ;
+cout<<*(it).second ;
 
+//unordered map - has unique keys but not in the sorted order and in general cases workes in constant time
 
+//IMPORTANT ALGORITHUMS 
 
+*FOR ARRAY 
+sort(a , a+n) ;
+*for vector   sort(v.begin() , v.end()) ;
+
+//comparater - check the second if they are in sorted then good if they are equal the if first are unsorted then sort them
+
+bool camp(pair<int , int> p1 , pair<int , int> p2){
+if(p1.second < p2.second) return true ;
+if(p1.second > p2.second) return false ;
+
+if(p1.first > p2.first) return true ;
+else return false ; }}
+
+pair<int , int> p[] = {{1,2} ,{3,4} ,{7,8}} ;
+sort(p , p+n , comp);
 
 
 
